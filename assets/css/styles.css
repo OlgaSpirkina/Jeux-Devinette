@@ -1,5 +1,6 @@
 body{
   background-color: #f7e7ce;
+  font-size: 2rem;
 }
 #paragraph_hidden{
   display: none;
@@ -37,7 +38,6 @@ p{
   text-align: center;
 }
 #introduction_phrase{
-  font-size: 1.5rem;
   font-family: 'Pacifico', cursive;
 }
 #demo,
