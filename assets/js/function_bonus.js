@@ -10,8 +10,9 @@ function displayRandomNumber(){
   displayRandomAnswer = Math.floor(Math.random() * 101);
   console.log("Le chiffre au hasard: " + displayRandomAnswer);
 }
+// Le chiffre au hasard est appeller à chaque chargement de la page
 window.onload = displayRandomNumber();
-
+// Jouer avec les touches de clavier
 function createArray(event){
   var x = event.keyCode;
   if (x == 13) {
@@ -40,16 +41,11 @@ function createArray(event){
         }
         else if(item == displayRandomAnswer){
           document.getElementById("demo").innerHTML = "bravo ! Vous avez deviné avec : " + counterOfGuess++ + " essais.";
-
         }
       }
     }
   }
 }
-
-
-
-
   function resetCounter(){
     document.getElementById('formId').reset();
     document.getElementById('paragraph_hidden').innerHTML  = "";
