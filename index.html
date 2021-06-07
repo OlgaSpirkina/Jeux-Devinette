@@ -22,21 +22,25 @@
             <p class="text-danger" id="how_many_rounds"></p>
         </div>
       </section>
-      <section>
-        <div class="explication_phrase">
-            <p>Entrez un nombre entre 0 et 100.</p>
-            <p>Appuyez 'Entrée' sur votre clavier pour commencer le jeux</p>
-        </div>
-        <form id="formId">
-          <input id="your_number" type="text" name="your_number" value="" onkeydown="createArray(event)">
-          <div>
-            <button id="reset_btn" type="button" name="button" onclick="resetCounter()">Rafraîchir</button>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12 explication_phrase">
+              <p>Entrez un nombre entre 0 et 100.</p>
+              <p>Appuyez 'Entrée' sur votre clavier pour commencer le jeux</p>
           </div>
-        </form>
-        <p id="count_times"></p>
-        <p id="display_the_answer"></p>
-        <p id="paragraph_hidden"></p>
-        <p id="demo"></p>
+          <form id="formId" class="col-12">
+            <input id="your_number" class="col-md-2 w-75" type="text" name="your_number" value="" onkeydown="createArray(event)">
+            <div>
+              <button id="reset_btn" type="button" name="button" onclick="resetCounter()">Rafraîchir</button>
+            </div>
+          </form>
+          <div class="col-12">
+            <p id="count_times"></p>
+            <p id="display_the_answer"></p>
+            <p id="paragraph_hidden"></p>
+            <p id="demo"></p>
+          </div>
+        </div>
       </section>
       <!-- Mon script, le script du bootstrap: jquery d'abord et bundle.min.js en deuxième -->
               <script src="assets/js/function_bonus.js"></script>

@@ -53,3 +53,8 @@ input{
   text-align: center;
   border: 2px solid #6b8e23;
 }
+@media all and (max-width: 600px) {
+  body{
+    font-size: 1.5rem;
+  }
+}
