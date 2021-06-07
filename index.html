@@ -25,12 +25,11 @@
       <section>
         <div class="explication_phrase">
             <p>Entrez un nombre entre 0 et 100.</p>
-            <p>Appuyez 'Jouez !' pour commencer le jeux</p>
+            <p>Appuyez 'Entrée' sur votre clavier pour commencer le jeux</p>
         </div>
         <form id="formId">
-          <input id="your_number" type="text" name="your_number" value="" >
+          <input id="your_number" type="text" name="your_number" value="" onkeydown="createArray(event)">
           <div>
-            <button id="play_btn" type="button" name="button"  onclick="createArray()">Jouer !</button>
             <button id="reset_btn" type="button" name="button" onclick="resetCounter()">Rafraîchir</button>
           </div>
         </form>
